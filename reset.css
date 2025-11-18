@@ -1,0 +1,59 @@
+/* Universal reset for margin, padding, and box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+  line-height: 1.5; /* Improves readability */
+  -webkit-font-smoothing: antialiased; /* Improves font rendering on macOS */
+}
+
+/* Image and media resets */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block; /* Prevents extra space below images */
+  max-width: 100%; /* Ensures images are responsive */
+}
+
+/* Form element resets */
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Inherit font styles from parent */
+}
+
+/* Remove default list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove default text decoration from links */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+
+
+/* Accessibility for visually hidden elements */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
